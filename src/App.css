@@ -7,16 +7,124 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #050c1a;;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 1.2em;
   color: white;
+}
+
+span, a{
+  color: white;
+}
+
+a:hover{
+  color: #8f9298;
+  text-decoration: none;
 }
 
 .App-link {
   color: #09d3ac;
+}
+
+
+.nav{
+  width: 100%;
+  border-bottom: 3px solid #ffffff;
+}
+
+.navbar-brand{
+  font-size: 2em;
+}
+
+.navbar-brand{
+  margin-left: 1%;
+  }
+
+.nav ul{
+  margin-left: 15%;
+  padding: 0.5%;
+  text-align: left;
+}
+
+.container{
+  max-width: 100%;
+}
+
+.imgSection{
+  display: grid;
+  grid-template-columns:  repeat(auto-fill, minmax(150px, 2fr));
+ 
+}
+
+.imgSection span{
+  font-size: 1.3rem;
+  font-family: 'Segoe Script';
+}
+
+
+.imgSection > *{
+  border: 5px solid #ffffff;
+  border-radius: 10px;
+  margin: 5%;
+}
+
+.modal{
+  top:5%;
+  left:45%;
+  color: #6c757d;
+}
+
+.modal-content{
+  width: 80%;
+  height: 70vh;
+  margin: auto;
+  box-shadow: #010306 0px 10px 10px 10px;
+}
+
+.modal-body{
+  flex-direction: row;
+  display: flex;
+}
+
+.modal-body > div{
+  width: 50%;
+  text-align: left;
+  margin-right: 20px;
+}
+
+.modal form, .modal input{
+  padding: 20px;
+}
+
+.modal span h4{
+  font-size: 2em;
+  text-align: center;
+}
+
+.modal button{
+  padding: 10px;
+
+}
+
+.show{
+  display: block;
+}
+
+@media(max-width: 992px){
+  .modal{
+    left: 10%;
+  }
+}
+
+@media(max-width: 575px){
+  .modal{
+    left: 2%;
+  }
+
+  .modalImage{
+    background-position: center;
+  }
 }
